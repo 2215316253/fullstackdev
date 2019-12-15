@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="navtest.css"  >
+<link rel="stylesheet" type="text/css" href="g.css"  >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<table class="a1">
+<tr>
+<td><img src="https://www.gitam.edu/assets/images/campus/hyderabad-campus-image.jpg" style="width:408px";height:auto;"/></td>
+
+<td class="a2"><h1 >GITAM UNIVERSITY</td></h1>
+</tr>
+</table>
+<ul class="ul">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About Us</a></li>
+</ul>
+<h2 style="text-align:center"></h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="http://www.cae2017.gitam.edu/img/slider_photo/slide1-gitam-1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="http://easyadmissions.org/wp-content/uploads/2019/05/courses.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="http://oldgitamwebsite.gitam.edu/images/inner-slides/gitam-athletics-img-6.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://cdn1.aglasem.com/admission/wp-content/uploads/2019/05/GITAM-GAT-2020_aglasem-min-750x375.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="http://prm.gitam.edu/blog/wp-content/uploads/2018/10/31895BC7-5849-4231-BAF2-030342E293F4.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://president.gitam.edu/assets/images/president_img.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="http://www.cae2017.gitam.edu/img/slider_photo/slide1-gitam-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gitam:Activities">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://easyadmissions.org/wp-content/uploads/2019/05/courses.png" style="width:100%" onclick="currentSlide(2)" alt="Gitam:Courses">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://oldgitamwebsite.gitam.edu/images/inner-slides/gitam-athletics-img-6.jpg" style="width:100%" onclick="currentSlide(3)" alt="Gitam:Sports">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn1.aglasem.com/admission/wp-content/uploads/2019/05/GITAM-GAT-2020_aglasem-min-750x375.png" style="width:100%" onclick="currentSlide(4)" alt="Gitam:Admissions">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://prm.gitam.edu/blog/wp-content/uploads/2018/10/31895BC7-5849-4231-BAF2-030342E293F4.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Gitam:COnvocation">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://president.gitam.edu/assets/images/president_img.jpg" style="width:100%" onclick="currentSlide(6)" alt="About Campus">
+	 
+    
+  </div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<footer class="k">
+  <p>Posted by:GITAM</p>
+  <p>Contact information: <a href="www.gitam.edu">gitam.edu</a></p>
+</footer>
+
+<p><strong></strong></p>
+    
+
+<p></p>
+
+</body>
+</html>
