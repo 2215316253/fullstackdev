@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<title>gitam banner</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<style>
+h1{
+   text-align:center;
+   }
+.a7
+{
+	background-color:gold;
+	}
+	
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ <!-- 
+li {
+  float: left;
+  padding: 13px; 	
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: white;
+}
+!-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</style>
+</head>
+<body>
+<script>
+function myFunction() {
+   var x = document.getElementById("txtUserName");
+    var y = document.getElementById("txtpassword");
+   var pattern = RegExp("^[a-z A-Z 0-9 _ .]{6,10}$");
+  var pattern1 = RegExp("(?=.*\d)(?=.*[_.$!@])(?=.*[A-z])(?=.[a-z]).{6,12}$");
+   if(pattern.test(x.value))
+   {
+   if(pattern1.test(y.value))
+   {
+		alert("Sucesfuly loggedin");
+		}
+   }
+   else
+   {
+			alert("Invalid Details");
+   }
+}
+</script>
+<h1>GITAM UNIVERSITY </h1>
+	<div class="container" style="width:1396px">
+		<div class="row a7">
+			<div class="col-md-4">
+			  <a href="https://www.gitam.edu/"> <img src="https://www.gitam.edu/assets/images/category-1.png"></a>
+			   
+			   <img src="https://www.gitam.edu/assets/images/naac-logo.png">
+			</div>
+			<div class="col-md-4">
+				<img src="https://www.gitam.edu/assets/images/GITAM-logo.png" width=333px>
+			</div>
+			<div class="col-md-4 a1">
+				<img src="https://www.gitam.edu/assets/images/aicte.png" style="margin-left:125px">
+				<img src="https://www.gitam.edu/assets/images/excellence.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul style="width:1350px">
+  <li><a class="active" href="#">Home</a></li>
+  <li><a href="news">About</a></li>
+  <li><a href="academics" target=_blank>Academics</a></li>
+  <li><a href="Admissions">Admissions</a></li>
+  <li><a href="Evaluation">Evaluation</a></li>
+  <li><a href="Admissions">Admissions</a></li>
+  <li><a href="Admissions">Evaluation</a></li>
+  <li><a href="Admissions">Reasearch</a></li>
+  <li><a href="Admissions">Placements</a></li>
+  <li><a href="Admissions">International</a></li>
+  <li><a href="Admissions">In campus</a></li>
+  <li><a href="Login.html">Login</a></li>
+</ul>
+</div>
+</div>
+	</div>
+	<center><h2>Login Form</h2></center>
+
+<form action="" method="">
+  <div class="imgcontainer">
+    <img src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" height="50px" width="50px" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="txtUserName" name="uname" pattern="^[a-z, A-Z}]{5,10}$" title="enter a valid name">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="txtpassword" name="psw" pattern="(?=.*\d)(?=.*[_.$!@])(?=.*[A-z])(?=.[a-z]).{6,12}$" title="enter password in the required pattern">
+        
+    <button type="submit" onclick="myFunction()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+	 <button type="button" class="cancelbtn"><a href="newregister.html">New Register</a></button>
+    <span class="psw">Forgot <a href="forgotpassword.html">password?</a></span>
+	
+  </div>
+</form>
+
+</body>
+</html>

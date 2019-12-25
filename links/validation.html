@@ -1,0 +1,68 @@
+<htl>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<table class="table table-striped">
+<thead>
+<tr>
+<th colspan="2" style="text-align:center">Registration Page</th>
+</tr>
+</thead>
+<tbody>
+<form action="/action_page.php">
+<tr>
+<td>Username</td>
+<td><input id="username" placeholder="Enter Your Name"/></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea id="txtAddress" placeholder="Enter the Address" /></textarea></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input id="txtEmailID" placeholder="Enter Your EmailId" type="email" pattern="^[a-z A-Z 0-9 _ .]{6,17}[@][A-Z a-z]{4,7}[.][a-z]{2,7}$" title="provide a valid mail"/></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input id="phonenumber" placeholder="Enter Your number" type="text" pattern=" ^[0][6-9][0-9]{9}$" title="please enter a valid number"/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input id="txtpassword" placeholder="Enter Your Password" type="password" /></td>
+</tr>
+<tr>
+<td>Choose</td>
+<td><select>
+<option>1</option>
+<option>1</option>
+<option>1</option>
+</select></td>
+</tr>
+<tr>
+<td>CheckBox</td>
+<td><input id="txtChk1" type="checkbox" value="1"/></td>
+</tr>
+<tr>
+<td>RadioButton</td>
+<td><input id="rd1" type="radio"/></td>
+</tr>
+<tr>
+<td>Range</td>
+<td><input type="range" maxlength="5" maxlength="15"/></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><button>Submit</button></td>
+</tr>
+
+</tbody>
+</form>
+</table>
+</body>
+</html>
